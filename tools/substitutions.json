@@ -954,20 +954,20 @@
     },
     {
       "pattern": "Skip it when the test would be expensive, integration-heavy, or unclear.",
-      "replacement": "Skip it when the test would be expensive, integration-heavy, or unclear. The test must also pass the **test-behavior-not-implementation** principle skill. When it could only assert paint, timing, or wording, the repro is PR evidence, not a committed test.",
-      "rationale": "port policy, not a T3 mechanism: a test that pins the value, string, or paint the fix produced also fails before the fix, so failing first alone lets it in as a permanent test",
+      "replacement": "Skip it when the test would be expensive, integration-heavy, or unclear. The test must also pass the **test-behavior-not-implementation** principle skill. One that only restates the value, string, or number the fix produced fails it, so keep that repro as PR evidence, not a committed test.",
+      "rationale": "port policy, not a T3 mechanism: a test that pins the value, string, or number the fix produced also fails before the fix, so failing first alone lets it in as a permanent test",
       "files": "^skills/poteto-mode/playbooks/bug-fix\\.md$"
     },
     {
       "pattern": "The goal is a focused regression test that fails before the fix and passes after it.",
-      "replacement": "The goal is a focused regression test that fails before the fix and passes after it. Failing first is not enough. The test must also pass the **test-behavior-not-implementation** principle skill. When it could only assert paint, timing, or wording, keep the repro as evidence and add no test.",
-      "rationale": "port policy, not a T3 mechanism: a test that pins the value, string, or paint the fix produced also fails before the fix, so failing first alone lets it in as a permanent test",
+      "replacement": "The goal is a focused regression test that fails before the fix and passes after it. Failing first is not enough. The test must also pass the **test-behavior-not-implementation** principle skill. When the only test you can write restates the value, string, or number the fix produced, keep the repro as evidence and add no test.",
+      "rationale": "port policy, not a T3 mechanism: a test that pins the value, string, or number the fix produced also fails before the fix, so failing first alone lets it in as a permanent test",
       "files": "^skills/tdd/SKILL\\.md$"
     },
     {
       "pattern": "The canonical shape is the failing test first, then the fix on top.",
-      "replacement": "The canonical shape is the failing test first, then the fix on top. That test must also pass the **test-behavior-not-implementation** principle skill. When it could only assert paint, timing, or wording, the failing run is PR evidence, not a commit.",
-      "rationale": "port policy, not a T3 mechanism: a test that pins the value, string, or paint the fix produced also fails before the fix, so failing first alone lets it in as a permanent test",
+      "replacement": "The canonical shape is the failing test first, then the fix on top. That test must also pass the **test-behavior-not-implementation** principle skill. When the only test you can write restates the value, string, or number the fix produced, the failing run stays PR evidence.",
+      "rationale": "port policy, not a T3 mechanism: a test that pins the value, string, or number the fix produced also fails before the fix, so failing first alone lets it in as a permanent test",
       "files": "^skills/principle-sequence-verifiable-units/SKILL\\.md$"
     },
     {
